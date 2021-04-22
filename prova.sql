@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `ator` (
   `ultima_atualizacao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `IDX_ATOR` (`ultimo_nome`)
-) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 --
 -- Extraindo dados da tabela `ator`
@@ -269,7 +269,7 @@ CREATE TABLE IF NOT EXISTS `filme` (
   KEY `IDX_TITULO` (`titulo`),
   KEY `IDX_FK_IDIOMA` (`idioma_id`),
   KEY `IDX_FK_IDIOMA_ORIGINAL` (`idioma_original_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 --
 -- Extraindo dados da tabela `filme`
